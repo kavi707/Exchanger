@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">Exchanger</string>
+    <string name="powered_by">Powered by <b>kaviDroid</b></string>
+
+    <string name="e_label_english">English</string>
+    <string name="e_label_sinhala">සිංහල</string>
+    <string name="e_label_tamil">தமிழ்</string>
+
+    <string name="e_label_ok">Ok</string>
+    <string name="e_label_yes">Yes</string>
+    <string name="e_label_no">No</string>
+    <string name="e_label_submit">Submit</string>
+    <string name="e_label_save">Save</string>
+    <string name="e_label_cancel">Cancel</string>
+    <string name="e_label_reset">Reset</string>
+    <string name="e_label_delete">Delete</string>
+    <string name="e_label_keep">Keep</string>
+
+    <!-- Auth -->
+    <string name="e_nav_home">Home</string>
+    <string name="e_nav_request">Ticket Requests</string>
+    <string name="e_nav_my_requests">My Requests</string>
+    <string name="e_nav_my_profile">My Profile</string>
+    <string name="e_nav_notifications">Notifications</string>
+    <string name="e_nav_languages">Languages</string>
+    <string name="list_msg_empty">No new ticket exchanges available</string>
+    <string name="list_msg_issue">Issue on loading ticket requests</string>
+    <string name="list_msg_offline">No internet connection</string>
+    <string name="e_label_sign_in">Sign In</string>
+    <string name="e_label_sign_in_msg">Did you missed to book <b>Tickets</b>? \n or \n Are you going to loss your <b>Money</b>?</string>
+    <string name="et_add_request_error_msg_1">Some details are missing in \n\'Ticket info\' section.\n\nPlease double check and re-submit your request.</string>
+    <string name="auth_label_home_facebook_login">Login in with Facebook</string>
+    <string name="auth_label_home_google_login">Login in with Google</string>
+
+
+    <!-- Home -->
+    <string name="e_label_me">Me</string>
+    <string name="e_label_name">Name</string>
+    <string name="e_label_contact_info">Contact info:</string>
+    <string name="e_hint_phone_number">Phone Number</string>
+    <string name="e_hint_email_address">Email Address</string>
+    <string name="e_label_ticket_info">Ticket info:</string>
+    <string name="e_label_ticket_date">Ticket Date</string>
+    <string name="e_label_ticket_time">Ticket Time</string>
+    <string name="e_label_note">Note:</string>
+
+    <string name="e_hint_first_name">First Name</string>
+    <string name="e_hint_last_name">Last Name</string>
+    <string name="e_hint_email">Email</string>
+    <string name="e_label_register">Register</string>
+
+    <string name="e_label_for">For</string>
+    <string name="e_label_on">on</string>
+    <string name="e_label_at">at</string>
+    <string name="e_label_contact_details">Contact Details</string>
+    <string name="e_label_call_me">Call me</string>
+    <string name="e_label_email_me">Email me</string>
+
+    <string name="e_hint_from_date">From Date</string>
+    <string name="e_hint_to_date">To Date</string>
+    <string name="e_label_search">Search</string>
+
+    <string name="e_label_i_need">Need</string>
+    <string name="e_label_i_have">Have</string>
+    <string name="e_label_no_new_exchanges_msg">No new ticket exchanges available</string>
+
+    <string name="e_label_notifications_coming_soon">Notifications are Coming Soon</string>
+
+    <string name="e_toast_device_internet_error">Please check device Internet connection.</string>
+    <string name="e_toast_request_submit_success">Successfully submitted your Exchange Ticket request.</string>
+    <string name="e_toast_request_submit_error">There was an error while submitting your request. Please try again from while.</string>
+    <string name="e_toast_user_registration_error">Issue in user registration. Please try again from while.</string>
+    <string name="e_toast_sign_in_error">Issue in sign-in. Please try again from while.</string>
+    <string name="e_toast_common_service_error">There was an error while making your request. Please try again from while.</string>
+    <string name="e_toast_delete_request_success">Successfully deleted your ticket request.</string>
+    <string name="e_toast_user_update_success">Successfully updated the user profile.</string>
+    <string name="e_toast_user_update_error">Issue in user updating. Please try again from while.</string>
+    <string name="e_toast_invalid_ticket_date_time_error">Your ticket date &amp; time was already passed.</string>
+
+    <string name="e_dialog_missing_info">Missing information</string>
+    <string name="e_dialog_delete_req_heading">Are you sure?</string>
+    <string name="e_dialog_delete_req_msg">You are going to delete the selected ticket request.\n\nAre you sure, you want to delete it?</string>
+    <string name="title_activity_landing">LandingActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+</resources>

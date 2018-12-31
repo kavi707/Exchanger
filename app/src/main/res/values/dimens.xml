@@ -1,0 +1,23 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- Padding / Margin / Spacing -->
+    <dimen name="fragment_boarder_padding">16dp</dimen>
+    <dimen name="view_boarder_padding">8dp</dimen>
+    <dimen name="view_padding">4dp</dimen>
+    <dimen name="grid_spacing">16px</dimen>
+    <dimen name="grid_spacing_large">32px</dimen>
+    <dimen name="search_grid_spacing">8px</dimen>
+    <dimen name="location_screen_bottom_margin">32dp</dimen>
+    <dimen name="upload_picker_padding">8dp</dimen>
+    <dimen name="upload_picker_margin">4dp</dimen>
+
+    <!-- Text Sizes -->
+    <dimen name="heading_text_size">24sp</dimen>
+    <dimen name="button_text_size">16sp</dimen>
+</resources>
