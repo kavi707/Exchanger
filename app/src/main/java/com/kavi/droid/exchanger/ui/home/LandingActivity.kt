@@ -3,14 +3,19 @@ package com.kavi.droid.exchanger.ui.home
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.design.widget.NavigationView
+import android.support.v4.app.Fragment
 import android.support.v4.view.GravityCompat
+import android.support.v4.widget.DrawerLayout
 import android.support.v7.app.ActionBarDrawerToggle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
+import com.kavi.droid.exchanger.AppConstant
 import com.kavi.droid.exchanger.R
 import com.kavi.droid.exchanger.ui.ExchangerBaseActivity
+import com.kavi.droid.exchanger.util.CommonUtil
 import kotlinx.android.synthetic.main.activity_landing.*
-import kotlinx.android.synthetic.main.app_bar_landing.*
+import kotlinx.android.synthetic.main.view_landing_app_bar.*
 
 class LandingActivity : ExchangerBaseActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -30,6 +35,9 @@ class LandingActivity : ExchangerBaseActivity(), NavigationView.OnNavigationItem
         toggle.syncState()
 
         nav_view.setNavigationItemSelectedListener(this)
+
+        // Remove app title from the action bar
+        supportActionBar!!.setDisplayShowTitleEnabled(false)
     }
 
     override fun onBackPressed() {
@@ -48,25 +56,41 @@ class LandingActivity : ExchangerBaseActivity(), NavigationView.OnNavigationItem
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         // Handle navigation view item clicks here.
+        var fragment: Fragment? = null
+        var fragmentTag = AppConstant.DEFAULT_FRAGMENT_TAG
         when (item.itemId) {
             R.id.nav_home -> {
-                // Handle the camera action
+                fragment = LanguageFragment()
+                fragmentTag = AppConstant.LANDING_LANGUAGE_FRAGMENT_TAG
             }
             R.id.nav_history -> {
-
+                fragment = LanguageFragment()
+                fragmentTag = AppConstant.LANDING_LANGUAGE_FRAGMENT_TAG
             }
             R.id.nav_profile -> {
-
+                fragment = LanguageFragment()
+                fragmentTag = AppConstant.LANDING_LANGUAGE_FRAGMENT_TAG
             }
             R.id.nav_notifications -> {
-
+                fragment = LanguageFragment()
+                fragmentTag = AppConstant.LANDING_LANGUAGE_FRAGMENT_TAG
             }
             R.id.nav_language -> {
-
+                fragment = LanguageFragment()
+                fragmentTag = AppConstant.LANDING_LANGUAGE_FRAGMENT_TAG
             }
         }
 
-        drawer_layout.closeDrawer(GravityCompat.START)
+        if (fragment != null) {
+            replaceFragmentView(fragment, R.id.landing_frame_container, fragmentTag, null)
+
+            val drawer = findViewById(R.id.drawer_layout) as DrawerLayout
+            drawer.closeDrawer(GravityCompat.START)
+        } else {
+            // error in creating fragment
+            Log.e("", "LandingActivity:onNavigationItemSelected / On Fragment form error: Fail to create Fragment")
+        }
+
         return true
     }
 }

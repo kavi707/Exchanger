@@ -23,8 +23,8 @@
         <activity android:name=".ui.auth.AuthActivity" />
         <activity
             android:name=".ui.home.LandingActivity"
-            android:label="@string/title_activity_landing"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
     </application>
 
 </manifest>

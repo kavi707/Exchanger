@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
+import com.kavi.droid.exchanger.util.CommonUtil
 
 open class ExchangerBaseActivity: AppCompatActivity() {
 
@@ -28,6 +29,12 @@ open class ExchangerBaseActivity: AppCompatActivity() {
             // error in creating fragment
             Log.e(TAG, "ExchangerBaseActivity:replaceFragmentView / On Fragment form error: Fail to create Fragment")
         }
+    }
+
+    override fun onResumeFragments() {
+        super.onResumeFragments()
+        // Init local
+        CommonUtil.setLocale(this)
     }
 
     fun goBack() {

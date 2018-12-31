@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="e_label_english">English</string>
+    <string name="e_label_sinhala">සිංහල</string>
+    <string name="e_label_tamil">தமிழ்</string>
+
+    <string name="e_label_ok">හරි</string>
+    <string name="e_label_yes">ඔව්</string>
+    <string name="e_label_no">නැත</string>
+    <string name="e_label_submit">ඉදිරිපත් කරන්න</string>
+    <string name="e_label_save">සුරකින්න</string>
+    <string name="e_label_cancel">අවලංගු කරන්න</string>
+    <string name="e_label_reset">නැවත පිහිටුවන්න</string>
+    <string name="e_label_delete">මකන්න</string>
+    <string name="e_label_keep">තබා ගන්න</string>
+
+    <string name="e_nav_home">හුවමාරු</string>
+    <string name="e_nav_request">ටිකට් හුවමාරු</string>
+    <string name="e_nav_my_requests">මාගේ හුවමාරු</string>
+    <string name="e_nav_my_profile">මාගේ ගිණුම</string>
+    <string name="e_nav_notifications">දැනුම්දීම්</string>
+    <string name="e_nav_languages">භාෂා</string>
+
+    <string name="list_msg_empty">නව ටිකට් හුවමාරු නොමැත</string>
+    <string name="list_msg_issue">ටිකට් හුවමාරු ලබාගැනීමට මේ මොහොතේ අපහසුය.</string>
+    <string name="list_msg_offline">අන්තර්ජාල සම්බන්ධතාවයක් නැත</string>
+
+    <string name="e_label_sign_in">ඇතුල් වන්න</string>
+    <string name="e_label_sign_in_msg"> <b>ටිකට්</b> ඇනවුම් කිරීමට මගහැරුනිද? \n හෝ \n ඔබේ <b>මුදල්</b> ඔබට අහිමි වෙන්න යනවද?</string>
+
+    <string name="et_add_request_error_msg_1">\'ටිකට් තොරතුරු\' කොටසේ.\nසමහර විස්තර සම්පූර්ණ නොමැත.\n\nකරුණාකර ඔබගේ ඉල්ලීම නැවත පරීක්ෂා කර නැවත ඉදිරිපත් කරන්න.</string>
+
+    <string name="e_label_me">මම</string>
+    <string name="e_label_name">නම</string>
+    <string name="e_label_contact_info">ඇමතුම් විස්තර:</string>
+    <string name="e_hint_phone_number">දුරකතන අංකය</string>
+    <string name="e_hint_email_address">විද්යුත් තැපැල</string>
+    <string name="e_label_ticket_info">ටිකට් තොරතුරු:</string>
+    <string name="e_label_ticket_date">ටිකට් දිනය</string>
+    <string name="e_label_ticket_time">ටිකට් වෙලාව</string>
+    <string name="e_label_note">සටහන:</string>
+
+    <string name="e_hint_first_name">මුල් නම</string>
+    <string name="e_hint_last_name">අවසන් නම</string>
+    <string name="e_hint_email">විද්යුත් තැපැල</string>
+    <string name="e_label_register">ලියාපදිංචි වන්න</string>
+
+    <string name="e_label_for">for</string>
+    <string name="e_label_on">on</string>
+    <string name="e_label_at">at</string>
+    <string name="e_label_contact_details">ඇමතුම් විස්තර</string>
+    <string name="e_label_call_me">මට අමතන්න</string>
+    <string name="e_label_email_me">මට ඊමේල් කරන්න</string>
+
+    <string name="e_hint_from_date">දින සිට</string>
+    <string name="e_hint_to_date">දින දක්වා</string>
+    <string name="e_label_search">සොයන්න</string>
+
+    <string name="e_label_i_need">අවශ්යයි</string>
+    <string name="e_label_i_have">හුවමාරුවට තිබේ</string>
+    <string name="e_label_no_new_exchanges_msg">නව ටිකට් හුවමාරු නොමැත</string>
+
+    <string name="e_label_notifications_coming_soon">Notifications are Coming Soon</string>
+
+    <string name="e_toast_device_internet_error">කරුණාකර අන්තර්ජාල සම්බන්ධතාව පරීක්ෂා කරන්න.</string>
+    <string name="e_toast_request_submit_success">ඔබගේ ටිකට් හුවමාරු පත්රය සාර්ථකව ඉදිරිපත් කරන ලදි.</string>
+    <string name="e_toast_request_submit_error">ඔබගේ ඉල්ලීම ඉදිරිපත් කිරීමේදී දෝෂයක් ඇති විය. කරුණාකර නැවත වරක් උත්සාහ කරන්න.</string>
+    <string name="e_toast_user_registration_error">පරිශීලක ලියාපදිංචියෙහි දෝෂයක් ඇති විය. කරුණාකර නැවත වරක් උත්සාහ කරන්න.</string>
+    <string name="e_toast_sign_in_error">පිවිසීමේ ගැටළුවක්. කරුණාකර නැවත වරක් උත්සාහ කරන්න.</string>
+    <string name="e_toast_common_service_error">ඔබගේ ඉල්ලීම ඉදිරිපත් කිරීමේදී දෝෂයක් ඇති විය. කරුණාකර නැවත වරක් උත්සාහ කරන්න.</string>
+    <string name="e_toast_delete_request_success">ඔබගේ ටිකට් පත සාර්ථකව මකා දැමුවා.</string>
+    <string name="e_toast_user_update_success">පරිශීලක ගිණුම සාර්ථකව යාවත් කාලීන කර ඇත.</string>
+    <string name="e_toast_user_update_error">පරිශීලක ගිණුම යාවත්කාලීන කිරීමෙහිදී දෝෂයක් ඇති විය. කරුණාකර නැවත වරක් උත්සාහ කරන්න.</string>
+    <string name="e_toast_invalid_ticket_date_time_error">ඔබගේ ටිකට්පත කල් ඉකුත්වී ඇත.</string>
+
+    <string name="e_dialog_missing_info">තොරතුරු සම්පූර්ණ නොමැත</string>
+    <string name="e_dialog_delete_req_heading">ඔබට විශ්වාසද?</string>
+    <string name="e_dialog_delete_req_msg">ඔබ තෝරාගත් හුවමාරුව මකාදැමීමට සූදානම්.\n\nඔබට විශ්වාසද, ඔබට එය මකා දැමීමට අවශ්යය බව?</string>
+</resources>
