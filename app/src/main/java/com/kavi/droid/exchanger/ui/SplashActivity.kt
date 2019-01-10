@@ -38,6 +38,7 @@ class SplashActivity : ExchangerBaseActivity() {
                         })
             }
         } else {
+
             NetworkModule.getCommonInterceptor().getSystemStatus()
                     .subscribe({
                         result ->
