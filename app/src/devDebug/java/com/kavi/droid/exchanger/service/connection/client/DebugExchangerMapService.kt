@@ -5,6 +5,8 @@ import com.kavi.droid.exchanger.service.connection.dto.response.ResBase
 import com.kavi.droid.exchanger.service.connection.dto.response.data.ConsumerConfig
 import com.kavi.droid.exchanger.service.connection.dto.response.data.SystemStatus
 import com.kavi.droid.exchanger.service.connection.dto.response.data.TokenStatus
+import com.kavi.droid.exchanger.service.connection.mock.AuthMockHelper
+import com.kavi.droid.exchanger.service.connection.mock.CommonMockHelper
 import io.reactivex.Observable
 import retrofit2.mock.BehaviorDelegate
 import retrofit2.mock.Calls
@@ -20,14 +22,18 @@ class DebugExchangerMapService(mockRetrofit: MockRetrofit) : ExchangerMapService
 
     override fun getSystemStatus(): Observable<BaseResponse<SystemStatus>> {
         val response: BaseResponse<SystemStatus>? = BaseResponse("SUCCESS",
-                "Successfully get data",
-                SystemStatus("GOOD", "CONNECTED"))
+                "NodeGrid mBaaS status",
+                CommonMockHelper.getSystemStatus())
 
         return delegate.returning(Calls.response(response)).getSystemStatus()
     }
 
     override fun getCurrentTokenStatus(): Observable<BaseResponse<List<ResBase<TokenStatus>>>> {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        val response: BaseResponse<List<ResBase<TokenStatus>>>? = BaseResponse("SUCCESS",
+                "NodeGrid mBaaS status",
+                AuthMockHelper.getCurrentTokenStatus())
+
+        return delegate.returning(Calls.response(response)).getCurrentTokenStatus()
     }
 
     override fun getConsumerConfigurations(): Observable<BaseResponse<ConsumerConfig>> {

@@ -38,8 +38,7 @@ class SplashActivity : ExchangerBaseActivity() {
                         })
             }
         } else {
-
-            NetworkModule.getCommonInterceptor().getSystemStatus()
+            /*NetworkModule.getCommonInterceptor().getSystemStatus()
                     .subscribe({
                         result ->
                         Log.d("TAG: NodeGrid Status: ", result.nodegridStatus)
@@ -47,8 +46,7 @@ class SplashActivity : ExchangerBaseActivity() {
                     }, {
                         error ->
                         Log.d("TAG: Error: ", error.message)
-                    })
-
+                    })*/
             goAuthFlow();
         }
     }
