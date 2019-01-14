@@ -24,20 +24,7 @@ class LandingActivity : ExchangerBaseActivity(), NavigationView.OnNavigationItem
         setContentView(R.layout.activity_landing)
         setSupportActionBar(toolbar)
 
-        fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show()
-        }
-
-        val toggle = ActionBarDrawerToggle(
-                this, drawer_layout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
-        drawer_layout.addDrawerListener(toggle)
-        toggle.syncState()
-
-        nav_view.setNavigationItemSelectedListener(this)
-
-        // Remove app title from the action bar
-        supportActionBar!!.setDisplayShowTitleEnabled(false)
+        setupView()
     }
 
     override fun onBackPressed() {
@@ -60,8 +47,8 @@ class LandingActivity : ExchangerBaseActivity(), NavigationView.OnNavigationItem
         var fragmentTag = AppConstant.DEFAULT_FRAGMENT_TAG
         when (item.itemId) {
             R.id.nav_home -> {
-                fragment = LanguageFragment()
-                fragmentTag = AppConstant.LANDING_LANGUAGE_FRAGMENT_TAG
+                fragment = HomeFragment()
+                fragmentTag = AppConstant.LANDING_HOME_FRAGMENT_TAG
             }
             R.id.nav_history -> {
                 fragment = LanguageFragment()
@@ -92,5 +79,29 @@ class LandingActivity : ExchangerBaseActivity(), NavigationView.OnNavigationItem
         }
 
         return true
+    }
+
+    fun setupView() {
+        fab.setOnClickListener { view ->
+            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                    .setAction("Action", null).show()
+        }
+
+        val toggle = ActionBarDrawerToggle(
+                this, drawer_layout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
+        drawer_layout.addDrawerListener(toggle)
+        toggle.syncState()
+
+        nav_view.setNavigationItemSelectedListener(this)
+
+        // Remove app title from the action bar
+        supportActionBar!!.setDisplayShowTitleEnabled(false)
+
+        setInitialView()
+    }
+
+    fun setInitialView() {
+        val fragment = HomeFragment();
+        replaceFragmentView(fragment, R.id.landing_frame_container, AppConstant.LANDING_HOME_FRAGMENT_TAG, null)
     }
 }

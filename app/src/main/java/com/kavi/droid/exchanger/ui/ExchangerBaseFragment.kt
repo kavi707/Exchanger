@@ -15,7 +15,7 @@ open class ExchangerBaseFragment: Fragment() {
     private val TAG = ExchangerBaseFragment::class.java.name;
 
     private val gson: Gson? = Gson()
-    var pageView: View? = null
+    protected var pageView: View? = null
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return super.onCreateView(inflater, container, savedInstanceState)

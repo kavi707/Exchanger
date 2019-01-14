@@ -4,9 +4,11 @@ import com.kavi.droid.exchanger.service.connection.dto.response.BaseResponse
 import com.kavi.droid.exchanger.service.connection.dto.response.ResBase
 import com.kavi.droid.exchanger.service.connection.dto.response.data.ConsumerConfig
 import com.kavi.droid.exchanger.service.connection.dto.response.data.SystemStatus
+import com.kavi.droid.exchanger.service.connection.dto.response.data.Ticket
 import com.kavi.droid.exchanger.service.connection.dto.response.data.TokenStatus
 import com.kavi.droid.exchanger.service.connection.mock.AuthMockHelper
 import com.kavi.droid.exchanger.service.connection.mock.CommonMockHelper
+import com.kavi.droid.exchanger.service.connection.mock.TicketMockHelper
 import io.reactivex.Observable
 import retrofit2.mock.BehaviorDelegate
 import retrofit2.mock.Calls
@@ -38,5 +40,15 @@ class DebugExchangerMapService(mockRetrofit: MockRetrofit) : ExchangerMapService
 
     override fun getConsumerConfigurations(): Observable<BaseResponse<ConsumerConfig>> {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun getTicketRequests(): Observable<BaseResponse<List<ResBase<Ticket>>>> {
+
+        val response: BaseResponse<List<ResBase<Ticket>>>? = BaseResponse(
+                "SUCCESS",
+                "Data retrieved successfully",
+                TicketMockHelper.getTicketRequests())
+
+        return delegate.returning(Calls.response(response)).getTicketRequests()
     }
 }

@@ -3,6 +3,7 @@ package com.kavi.droid.exchanger.service.connection.client
 import com.kavi.droid.exchanger.service.connection.dto.response.*
 import com.kavi.droid.exchanger.service.connection.dto.response.data.ConsumerConfig
 import com.kavi.droid.exchanger.service.connection.dto.response.data.SystemStatus
+import com.kavi.droid.exchanger.service.connection.dto.response.data.Ticket
 import com.kavi.droid.exchanger.service.connection.dto.response.data.TokenStatus
 import io.reactivex.Observable
 import retrofit2.http.GET
@@ -17,4 +18,7 @@ interface ExchangerMapService {
 
     @GET("/auth/app/consumer/config")
     fun getConsumerConfigurations(): Observable<BaseResponse<ConsumerConfig>>
+
+    @GET("/app/advance/ticket_requests")
+    fun getTicketRequests(): Observable<BaseResponse<List<ResBase<Ticket>>>>
 }
